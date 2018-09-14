@@ -67,6 +67,28 @@
   </tbody>
 </table>
 
+<table id='sort-currency'>
+  <thead>
+    <tr>
+      <th>Currencies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$0.79</td>
+    </tr>
+    <tr>
+      <td>₽3.12</td>
+    </tr>
+    <tr>
+      <td>£2.79</td>
+    </tr>
+    <tr>
+      <td>63€</td>
+    </tr>
+  </tbody>
+</table>
+
 <table id='sort-descend'>
   <thead>
     <tr>
@@ -187,6 +209,7 @@
 <!-- Tests -->
 <script>
 table = document.getElementById('sort');
+tableCurrency = document.getElementById('sort-currency');
 tableDescend = document.getElementById('sort-descend');
 tableExclude = document.getElementById('sort-exclude');
 tableDefault = document.getElementById('sort-default');
@@ -196,6 +219,7 @@ tableSortRowSet = document.getElementById('sort-row-set');
 tableSortRowAuto = document.getElementById('sort-row-auto');
 new Tablesort(table);
 new Tablesort(tableDescend, { descending: true });
+new Tablesort(tableCurrency);
 new Tablesort(tableExclude);
 new Tablesort(tableDefault);
 new Tablesort(tableMulti);
